@@ -68,14 +68,14 @@ document.addEventListener('DOMContentLoaded', function () {
         x: {
           type: 'linear',
           position: 'bottom',
-          min: -20,
-          max: 20,
+          min: -50,
+          max: 50,
         },
         y: {
           type: 'linear',
           position: 'left',
-          min: -20,
-          max: 20,
+          min: -50,
+          max: 50,
         }
       }
     }
