@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Resizing Chart.js Example</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    /* This will be overridden if another rule for canvas comes after */
+    canvas {
+      width: 1000px;
+      height: 1000px;
+    }
+
+    div {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="display: flex; align-items: center; flex-direction: column; margin-top: 50px;">
+    <canvas id="myChart"></canvas>
+    <div>
+      <label>Weights: </label>
+      <input type="number" class="weight-input" step="any" value="0">
+      <input type="number" class="weight-input" step="any" value="0">
+      <input type="number" class="weight-input" step="any" value="0">
+      <!-- <button id="updateButton">
+        <svg fill="#000000" width="30px" height="30px" viewBox="0 -4 32 32" xmlns="http://www.w3.org/2000/svg">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+            <path d="m24.983 8.539v-2.485h-4.902l-3.672 5.945-2.099 3.414-3.24 5.256c-.326.51-.889.844-1.53.845h-9.54v-3.568h8.538l3.673-5.946 2.099-3.414 3.24-5.256c.325-.509.886-.843 1.525-.845h5.904v-2.485l7.417 4.27-7.417 4.27z"></path>
+            <path d="m12.902 6.316-.63 1.022-1.468 2.39-2.265-3.675h-8.538v-3.568h9.54c.641.001 1.204.335 1.526.838l.004.007 1.836 2.985z"></path>
+            <path d="m24.983 24v-2.485h-5.904c-.639-.002-1.201-.336-1.521-.838l-.004-.007-1.836-2.985.63-1.022 1.468-2.39 2.264 3.675h4.902v-2.485l7.417 4.27-7.417 4.27z"></path>
+          </g>
+        </svg>
+      </button> -->
+      <label>Bias: </label>
+      <input id="bias" type="number" step="any" value="0">
+      <label>X = </label>
+      <input id="output" step="any" value="0" readonly>
+    </div>
+  </div>
+
+  <script src="plot.js">
+    
+  </script>
+</body>
+
+</html>
